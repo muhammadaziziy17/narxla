@@ -1,4 +1,9 @@
+
+
 # Narxla — AI Qurilmalar Bozor Narxini Baholash Tizimi
+
+
+https://github.com/user-attachments/assets/b132b2b3-3b5a-45dd-a442-6cbdf9d58902
 
 <p align="center">
   <strong>Telefon, planshet va noutbuklarning O'zbekiston ikkilamchi bozoridagi haqiqiy narxini soniyalarda AI yordamida aniqlang.</strong>
