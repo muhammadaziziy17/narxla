@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Maxfiy va tizim fayllarini brauzerdan to'g'ridan-to'g'ri ochishni taqiqlash (403 Forbidden)
+    RewriteRule ^(\.env|\.git|composer\.(json|lock)|package\.(json|lock)|phpunit\.xml) - [F,L,NC]
+    RewriteRule ^storage/logs/.*$ - [F,L,NC]
+    RewriteRule ^(app|bootstrap|config|database|resources|routes|tests)/ - [F,L,NC]
+
+    # Barcha so'rovlarni public/ papkasiga xavfsiz yo'naltirish
+    RewriteCond %{REQUEST_URI} !^/public/
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
